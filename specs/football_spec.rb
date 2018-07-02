@@ -3,4 +3,16 @@ require_relative('../football')
 require('minitest/rg')
 
 class TestStudents < MiniTest::Test
-end 
+
+
+  def test_team_name
+    football_team = FootballTeam.new("Lech", 20, "Graczyk")
+    assert_equal("Lech", football_team.team_name)
+  end
+
+#Create a method that adds a new player to the players array.
+  # def test_add_players
+  #   football_teamfootball_team = FootballTeam.new("Lech", 20, "Graczyk")
+  #   assert_equal(22, football_team.players.count)
+  # end
+end
