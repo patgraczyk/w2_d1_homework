@@ -14,12 +14,21 @@ class Codeclan_student
    return @cohort
  end
 
- def set_student_name (new_name)
+ def set_student_name(new_name)
    @name = new_name
  end
 
- def test_set_student_cohort (new_cohort)
+ def set_student_cohort(new_cohort)
    @cohort = new_cohort
 end
+
+  def student_talk(talk)
+    @name = name + talk
+  end
+
+  def favourite_language language
+      return "I love #{language}"
+    end
+
 
 end
