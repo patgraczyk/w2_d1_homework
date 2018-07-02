@@ -9,8 +9,9 @@ def initialize (team_name, players, coach)
   @coach = coach
 end
 
-def add_players(how_many_players)
-    @players += how_many_players
+def add_players(new_player)
+    @players.push(new_player)
 end
+
 
 end
