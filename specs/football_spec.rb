@@ -26,11 +26,11 @@ class TestStudents < MiniTest::Test
 #Add a method that takes in a string of a player's name and checks
 #to see if they are in the players array.
 
-# def test_player_in_players
-#   football_team = FootballTeam.new("Lech", ["One", "Two", "Three"], "Graczyk")
-#   football_team.players("One")
-#   assert_equal(true, football_team.players)
-# end
+def test_check_players
+  football_team = FootballTeam.new("Lech", ["One", "Two", "Three"], "Graczyk")
+  # football_team.players("One")
+  assert_equal(false, football_team.check_players("Zero"))
+end
 
 #Add a points property into your class that starts at 0.
 #DONE
@@ -38,10 +38,10 @@ class TestStudents < MiniTest::Test
 #Create a method that takes in whether the team has won or
 #lost and updates the points property for a win.
 #
-# def test_team_scores
-#   football_team = FootballTeam.new("Lech", ["One", "Two", "Three"], "Graczyk")
-#   football_team.points("win")
-#   assert_equal(1, football_team.points)
-# end
+def test_team_scores
+  football_team = FootballTeam.new("Lech", ["One", "Two", "Three"], "Graczyk")
+  football_team.team_scores("win")
+  assert_equal(1, football_team.points)
+end
 
 end

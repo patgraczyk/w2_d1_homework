@@ -14,14 +14,16 @@ def add_players(new_player)
     @players.push(new_player)
 end
 
-# def player_in_players(check_player)
-#   if @players == check_player
-#   return true
-# end
-# end
-# end
+def check_players(check_player)
+  for player in players
+  return true if (player == check_player)
+end
+  return false
+end
 
-# def test_team_scores(result)
-#   @points +=1 if ("win")
-# end
+
+def team_scores(result)
+  @points += 1 if (result == "win")
+end
+
 end
