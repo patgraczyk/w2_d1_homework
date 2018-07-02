@@ -11,8 +11,9 @@ class TestStudents < MiniTest::Test
   end
 
 #Create a method that adds a new player to the players array.
-  # def test_add_players
-  #   football_teamfootball_team = FootballTeam.new("Lech", 20, "Graczyk")
-  #   assert_equal(22, football_team.players.count)
-  # end
+  def test_add_players
+    football_team = FootballTeam.new("Lech", 20, "Graczyk")
+    football_team.add_players(2)
+    assert_equal(22, football_team.players)
+  end
 end
